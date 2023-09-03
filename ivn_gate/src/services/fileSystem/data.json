@@ -1,0 +1,24 @@
+[
+    {
+      "author": "Olivia Rhye",
+      "date": "2022-01-20",
+      "heading": "UX review presentations",
+      "excerpt": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+      "tags": ["Design", "Research"]
+    },
+    {
+      "author": "Phoenix Baker",
+      "date": "2022-01-19",
+      "heading": "Migrating to Linear 101",
+      "excerpt": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+      "tags": ["Design", "Research"]
+    },
+    {
+      "author": "Lana Steiner",
+      "date": "2022-01-18",
+      "heading": "Building your API Stack",
+      "excerpt": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them. Here's a look at some of the best options.",
+      "tags": ["Design", "Research"]
+    }
+  ]
+  
