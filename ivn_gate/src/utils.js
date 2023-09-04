@@ -56,7 +56,7 @@ const tagsData = [
             "backgroundColor": "#FFF6ED",
             "textColor": "#C4320A"
         }
-    ]
+]
 
 const dataFormat = (data) => {
 

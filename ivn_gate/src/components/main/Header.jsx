@@ -11,7 +11,7 @@ import Results from "./Results"
 
 const Header = () => {
 
-    const {searchKey,setSearchKey,response,resultView,setResultView} = useSearch();
+    const {searchKey,setSearchKey,resultView,setResultView} = useSearch();
 
     const query = useMediaQuery('(min-width: 1100px)')
 
@@ -26,7 +26,7 @@ const Header = () => {
                 <span className='font-semibold text-lg text-primary'>Articles,videos and more</span>
                 <h1 className={`text-[#273A57] font-semibold ${query ? 'text-[48px]' : 'text-[30px]'} max-w-lg leading-tight`}>Find the most relevant content in the IT world</h1>
                 <div className={query ? 'w-[400px]' : 'w-[300px]'}>
-                    <SearchBar placeHolder='I´m looking for...' action={handleSearch} value={searchKey} onClick={() => setResultView(true)} onChange={(e) => setSearchKey(e.target.value)}/>
+                    <SearchBar placeHolder='I´m looking for...' action={handleSearch} value={searchKey} onChange={(e) => setSearchKey(e.target.value)}/>
                 </div>
                 <p className="opacity-60">We care about your data in our <a className="underline cursor-pointer">privacy policy</a></p>
             </div>
