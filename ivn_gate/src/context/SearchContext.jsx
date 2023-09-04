@@ -18,8 +18,6 @@ const SearchContext = ({children}) => {
     const [response, setResponse] = useState(flatData)
     const [resultView, setResultView] = useState(false)
 
-    console.log(tags)
-
     useEffect(() => {
         let data
 
