@@ -7,9 +7,13 @@ import {
     dataFormat,
     tagsData
 } from "../../utils"
+import {
+    useMediaQuery 
+} from "../../hooks/useMediaQuery"
 
 const Results = () => {
 
+    const query = useMediaQuery('(min-width: 1100px)')
     const {response,setSearchKey, searchKey,setResultView,tags,setTags} = useSearch()
 
     const handleClose = () => {
@@ -26,9 +30,9 @@ const Results = () => {
                 <div className="w-full flex justify-end p-5 font-semibold">
                     <button onClick={handleClose}>Close</button>
                 </div>
-                <div className="w-[35%] flex flex-col items-center justify-center gap-10">
+                <div className="flex flex-col items-center justify-center gap-10">
                     <SearchBar placeHolder='I´m looking for...' value={searchKey}  onChange={(e) => setSearchKey(e.target.value)}/>
-                    <div className='flex gap-3'>
+                    <div className='flex gap-3 flex-wrap items-center justify-center'>
                         {tagsData.map((tag, tagIndex) => (
                             <div
                                 key={tagIndex}
@@ -47,22 +51,30 @@ const Results = () => {
                         ))}
                     </div>
                 </div>
-                <div className="w-[80%] grid grid-cols-2">
-                    {dataFormat(response).map((item,index) => (
-                    <div key={index} className="flex my-5 gap-5">
-                        <div
-                            className={`w-48 h-32 bg-cover bg-no-repeat bg-center rounded-lg`}
-                            style={{ backgroundImage: `url(${item.img})`}}
-                        />
-                        <div className="flex flex-col items-start gap-3">
-                            <span className='font-semibold text-sm text-primary'>{`${item.author} • ${item.formatDate}`}</span>
-                            <div className="w-full flex items-center justify-between">
-                                <h3 className='leading-8 text-2xl font-semibold'>{item.heading}</h3>
-                            </div>
-                            <p className='text-base leading-6 text-[#687382]'>{item.description.slice(0,80) + "..."}</p>
-                        </div>
-                        </div>
-                        ))}
+                <div className={`${query ? 'w-[80%]' : 'w-[95%]'} grid ${query ? 'grid-cols-2' : 'grid-cols-1'} ${!query ? 'overflow-y-scroll' : ''}`}>
+                    {
+                        response?.length > 0 ? (
+                            dataFormat(response).map((item,index) => (
+                                <div key={index} className={`flex my-5 gap-5 `}>
+                                    <div
+                                        className={`w-48 h-32 bg-cover bg-no-repeat bg-center rounded-lg`}
+                                        style={{ backgroundImage: `url(${item.img})`}}
+                                    />
+                                    <div className="flex flex-col items-start gap-3">
+                                        <span className='font-semibold text-sm text-primary'>{`${item.author} • ${item.formatDate}`}</span>
+                                        <div className="w-full flex items-center justify-between">
+                                            <h3 className='leading-8 text-2xl font-semibold'>{item.heading}</h3>
+                                        </div>
+                                        <p className='text-base leading-6 text-[#687382]'>{item.description.slice(0,80) + "..."}</p>
+                                    </div>
+                                </div>
+                                ))
+                            ) : (
+                                <div>
+                                    <h2>Not results</h2>
+                                </div>
+                            )
+                    }
                     </div>
             </div>
         </>
