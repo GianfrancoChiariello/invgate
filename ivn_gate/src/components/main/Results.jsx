@@ -30,8 +30,10 @@ const Results = () => {
                 <div className="w-full flex justify-end p-5 font-semibold">
                     <button onClick={handleClose}>Close</button>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-10">
+                <div className={`${query ? 'w-[40%]' : 'w-[80%]'}`}>
                     <SearchBar placeHolder='I´m looking for...' value={searchKey}  onChange={(e) => setSearchKey(e.target.value)}/>
+                </div>
+                <div>
                     <div className='flex gap-3 flex-wrap items-center justify-center'>
                         {tagsData.map((tag, tagIndex) => (
                             <div
