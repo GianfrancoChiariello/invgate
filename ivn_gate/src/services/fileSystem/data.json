@@ -3,22 +3,63 @@
       "author": "Olivia Rhye",
       "date": "2022-01-20",
       "heading": "UX review presentations",
-      "excerpt": "How do you create compelling presentations that wow your colleagues and impress your managers?",
-      "tags": ["Design", "Research"]
+      "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+      "img": "../../../src/assets/5_post-1.png",
+      "tags": [
+        {
+          "title" : "Design",
+          "backgroundColor": "#F0F9FF",
+          "textColor" : "#026AA2"
+        },
+        {
+          "title" : "Research",
+          "backgroundColor": "#EEF4FF",
+          "textColor" : "#3538CD"
+        },
+        {
+          "title" : "Presentation",
+          "backgroundColor": "#FDF2FA",
+          "textColor" : "#C11574"
+        }
+      ]
     },
     {
       "author": "Phoenix Baker",
       "date": "2022-01-19",
       "heading": "Migrating to Linear 101",
-      "excerpt": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
-      "tags": ["Design", "Research"]
+      "description": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+      "img": "../../../src/assets/6_post-2.png",
+      "tags": [
+        {
+          "title" : "Design",
+          "backgroundColor": "#F0F9FF",
+          "textColor" : "#026AA2"
+        },
+        {
+          "title" : "Research",
+          "backgroundColor": "#FDF2FA",
+          "textColor" : "#C11574"
+        }
+      ]
     },
     {
       "author": "Lana Steiner",
       "date": "2022-01-18",
       "heading": "Building your API Stack",
-      "excerpt": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them. Here's a look at some of the best options.",
-      "tags": ["Design", "Research"]
+      "description": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them. Here's a look at some of the best options.",
+      "img": "../../../src/assets/7_post-3.png",
+      "tags": [
+        {
+          "title" : "Design",
+          "backgroundColor": "#ECFDF3",
+          "textColor" : "#027A48"
+        },
+        {
+          "title" : "Research",
+          "backgroundColor": "#FDF2FA",
+          "textColor" : "#C11574"
+        }
+      ]
     }
   ]
   

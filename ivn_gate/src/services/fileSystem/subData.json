@@ -1,0 +1,64 @@
+[
+  {
+    "author": "Alec Whitten",
+    "date": "2022-01-18",
+    "heading": "Bill Walsh leadership lessons",
+    "description": "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+    "img": "../../../src/assets/3_card-1.jpeg",
+    "tags": [
+      {
+        "title": "Leadership",
+        "backgroundColor": "#F5F9FC",
+        "textColor": "#256BA5"
+      },
+      {
+        "title": "Management",
+        "backgroundColor": "#F8F9FC",
+        "textColor": "#363F72"
+      }
+    ]
+  },
+  {
+    "author": "Demi WIlkinson",
+    "date": "2022-01-16",
+    "heading": "PM mental models",
+    "description": "Mental models are simple expressions of complex processes or relationships.",
+    "img": "../../../src/assets/4_card-2.jpeg",
+    "tags": [
+      {
+        "title": "Product",
+        "backgroundColor": "#F5F9FC",
+        "textColor": "#256BA5"
+      },
+      {
+        "title": "Research",
+        "backgroundColor": "#EEF4FF",
+        "textColor": "#3538CD"
+      },
+      {
+        "title": "Frameworks",
+        "backgroundColor": "#FFF6ED",
+        "textColor": "#C4320A"
+      }
+    ]
+  },
+  {
+    "author": "Candice Wu",
+    "date": "2022-01-15",
+    "heading": "What is Wireframing?",
+    "description": "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+    "img": "../../../src/assets/5_card-3.jpeg",
+    "tags": [
+      {
+        "title": "Design",
+        "backgroundColor": "#F5F9FC",
+        "textColor": "#256BA5"
+      },
+      {
+        "title": "Research",
+        "backgroundColor": "#EEF4FF",
+        "textColor": "#3538CD"
+      }
+    ]
+  }
+]
